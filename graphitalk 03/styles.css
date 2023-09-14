@@ -1,0 +1,849 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Define a CSS variable for main color */
+:root {
+    --main-color: #1A5AFF;
+  }
+
+  
+/* styles for the navbar */
+.navbar-container{
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    /* margin-bottom: 100px; */
+}
+.logoNavigationIcon{
+  width: 20% !important;
+}
+#responsiveNav{
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+.loginSignup{
+width: 30%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+/* navigation icon */
+.navigation-icon{
+    display: none;
+}
+
+
+/* styles for the navlinks */
+.navlinks{
+  width: 60%;
+  margin-left: 25%;
+}
+.navlinks a{
+    font-size: 0.90rem;
+    text-decoration: none;
+    padding: 0.80em 1em;
+    cursor: pointer;
+    color: black;
+    transition: 0.4s;
+}
+.navlinks a:hover{
+    color: var(--main-color);
+}
+
+
+/* styles for the btn */
+.login-btn, .signup-btn{
+    border: none;
+    padding: 0.85em 1em;
+    margin: 0 0.70em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+    transition: box-shadow 0.3s; /* Adding transition for smooth effect */
+}
+
+/* styles for the navbar two btn */
+.login-btn:hover{
+    background-color: #efefefab;
+}
+.signup-btn{
+    background-color: var(--main-color);
+    color: white;
+    transition: 0.4s;
+}
+
+.signup-btn:hover{
+    background-color: #2980b9;;
+    color: white;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+/* styles for the header section */
+  .header-section{
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 15px;
+    overflow: hidden;
+  }
+
+  /* header left side content */
+  .left-content{
+    width: 40%;
+    margin-top: 50px;
+  }
+
+  .left-content h1{
+    font-size: 3rem;
+    font-weight: 400;
+    color: #13023A;
+  }
+
+  
+/* Style for the container holding the email input and signup button */
+.email-input-container {
+    width: 70%;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; /* Adding a subtle box shadow for a card-like effect */
+  }
+  
+  /* Style for the email input field */
+  input[type="email"] {
+    width: 100%;
+    flex: 1; /* Takes up the available space */
+    padding: 10px;
+    border: none; /* Removing the default input border */
+    border-radius: 4px 0 0 4px; /* Rounded corners on the left side */
+  }
+  input[type="email"]:focus{
+    outline: none;
+  }
+  /* Style for the signup button */
+  .hsignup-btn {
+    padding: 10px 20px;
+    margin: 5px; /* Adding some margin for spacing */
+    background-color: var(--main-color); /* Using a custom variable for background color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth color change on hover */
+  }
+  
+  /* Style for the signup button on hover */
+  .hsignup-btn:hover {
+    background-color: #2980b9; /* Changing background color when hovered */
+  }
+  
+/* header background shape */
+.background-shape{
+    position: absolute;
+    width: 70%;
+    height: 400px;
+    right: -10%;
+    bottom: -60%;
+    z-index: -1;
+    background-image: linear-gradient(
+        305deg,
+        hsl(240deg 100% 20%) 0%,
+        hsl(289deg 100% 21%) 29%,
+        hsl(315deg 100% 27%) 41%,
+        hsl(329deg 100% 36%) 51%,
+        hsl(337deg 100% 43%) 59%,
+        hsl(357deg 91% 59%) 67%,
+        hsl(17deg 100% 59%) 75%,
+        hsl(34deg 100% 53%) 83%,
+        hsl(45deg 100% 50%) 91%,
+        hsl(55deg 100% 50%) 100%
+      );
+    border-radius: 100px;
+    transform: rotate(120deg);
+}
+
+/* our client section */
+.ourclient{
+    width: 80%;
+    padding: 30px 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.ourclient img{
+    width: 80px;
+    height: 60px;
+    margin: 0 10px;
+}
+  
+/* styles for the benefit section */
+.benefit-section{
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 50px 15px;
+  border-top: 1px solid rgba(211, 211, 211, 0.322);
+}
+.left-side-content{
+  width: 50%;
+}
+
+.right-side-img{
+  width: 50%;
+ 
+}
+
+.img-under-shape, .img-shape{
+  display: block;
+  margin: auto;
+  width: 40%;
+  height: 400px;
+  background-color: black;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+.img-under-shape .img-shape:hover{
+  transform: rotate(0);
+}
+.img-under-shape .img-shape{
+  transform: rotate(-8deg);
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 5px;
+}
+.img-shape .img{
+  width: 100%;
+  height: 50%;
+  background-image: url(./assest/benefit\ img.webp);
+  background-size: cover;
+}
+.img-under-shape p{
+  font-size: 0.8rem;
+}
+/* styles for the two span */
+.twospan{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #efefef;
+}
+.more, .contact{
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+.more{
+  background-color: #1a5bff;
+  padding: 6px;
+  border-radius: 5px;
+  color: white;
+}
+.contact{
+  background-color: #F5486E;
+  padding: 6px;
+  border-radius: 5px;
+  color: white;
+}
+/* left side content */
+
+.left-side-content .option{
+  width: 50%;
+  margin-left: 100px;
+}
+.left-side-content h1{
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 50px;
+} 
+
+.left-side-content h4{
+  margin-bottom: 15px;
+}
+
+.left-side-content p{
+  margin-bottom: 30px;
+  margin-left: 30px;
+  font-size: 0.9rem;
+}
+
+/* left side content icon */
+.left-side-content h4 i{
+  margin-right: 10px;
+}
+
+.fa-hand-peace{
+  color: var(--main-color);
+}
+.fa-bullhorn{
+color: #F5486E;
+}
+.fa-bullseye{
+color: #FBB404;
+}
+
+/* styles for the services section */
+.service-section{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+.service-section .services-header{
+  width: 50%;
+  padding: 50px 15px;
+}
+.services-header h1{
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+.services-option-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* styles for the services option */
+.services-option{
+  width: 31%;
+  padding: 2em;
+  margin: 0.5em;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.more-option{
+  position: relative;
+  text-align: center;
+  background-color: var(--main-color);
+  color: white;
+}
+.see-more{
+position: absolute;
+top: 40%;
+left: 40%;
+}
+.services-option i{
+  margin-bottom: 20px;
+}
+.services-option h4{
+  margin-bottom: 20px;
+}
+.services-option p{
+  margin-bottom: 20px;
+  font-size: 0.8rem;
+}
+.fa-mobile, .fa-pen-nib, .fa-pen-to-square, .fa-wand-magic-sparkles, .fa-r-project {
+  padding: 5px;
+  background-color: rgba(202, 201, 201, 0.123);
+  border-radius: 5px;
+}
+.fa-mobile{
+  color: #1a5bff;
+}
+.fa-pen-nib{
+  color: #F5486E;
+
+}
+.fa-pen-to-square{
+  color: #FEA261;
+
+}
+.fa-wand-magic-sparkles{
+  color: #F5486E;
+
+}
+.fa-r-project{
+  color: #75DDF6;
+
+}
+.learn-more{
+  display: inline-block;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.learn-more:hover{
+  color: var(--main-color);
+}
+/* styles for the reveal brand section */
+.reveal-brand-section-wrapper{
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 15px;
+  
+}
+.reveal-brand-section{
+  display: flex;
+  justify-content: space-between;
+}
+.revel-left-box {
+  width: 40%;
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: space-between; /* Horizontally center content */
+  flex-wrap: wrap;
+}
+
+.reveal-box{
+  width: 40%;
+  height: 120px;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  background-image: linear-gradient(
+  45deg,
+  hsl(332deg 100% 38%) 0%,
+  hsl(328deg 100% 39%) 17%,
+  hsl(322deg 100% 39%) 23%,
+  hsl(316deg 100% 38%) 28%,
+  hsl(309deg 93% 38%) 33%,
+  hsl(299deg 71% 41%) 39%,
+  hsl(285deg 61% 49%) 46%,
+  hsl(269deg 69% 55%) 57%,
+  hsl(250deg 83% 62%) 74%,
+  hsl(223deg 100% 55%) 100%
+);
+}
+.reveal-box-more{
+  background-color: rgba(211, 211, 211, 0.26) !important;
+  background-image: none;
+  color: black;
+}
+.reveal-box i {
+  margin-top: 0px; /* Add some space between text and icon */
+}
+
+
+/* reveal right side */
+.reveal-right-container{
+  width: 55%;
+}
+.reveal-right-container .title{
+  display: flex;
+  align-items: center;
+}
+.title span{
+  margin-right: 20px;
+  padding: 10px;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 10px;
+}
+.reveal-right-container h1{
+  font-weight: 400;
+  margin: 30px 0;
+}
+.reveal-right-container a{
+  text-decoration: none;
+  margin: 0px 1em;
+  padding: 0.5em;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  background-color: rgba(211, 211, 211, 0.26);
+}
+.profile{
+  display: flex;
+  align-items: center;
+ margin-top: 50px;
+}
+.profile img{
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+.profile span{
+  font-size: 12px;
+}
+/* styles for the blog section */
+.blog-section{
+  max-width: 1200px;
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.blog{
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+.blog .img{
+  width: 150px;
+  height: 200px;
+  margin-right: 20px;
+}
+.blog-img01{
+  background-image: url(./assest/blog-img\ 01.png);
+  background-size: cover;
+}
+.blog-img02{
+  background-image: url(./assest/blog-img\ 02.png);
+  background-size: cover;
+}
+.blog .right-content{
+  width: 60%;
+}
+.right-content .title{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.right-content .title span{
+  border-radius: 20px !important;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+.right-content h3{
+  font-weight: 400;
+}
+
+/* styels for the action banner section */
+.action-banner-section{
+  background-color: #efefef;
+  margin-top: 50px;
+}
+.action-banner{
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.banner-left-side{
+  background-image: url(./assest/laptop.png);
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+}
+
+.action-banner .banner-left-side{
+  width: 30%;
+}
+.banner-right-side{
+  width: 40%;
+}
+.banner-right-side h1{
+  font-weight: 400;
+  width: 70%;
+}
+.banner-right-side button{
+  border: none;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.banner-right-side button:hover{
+  background-color: #042d94;
+}
+
+/* styles for the footer section */
+footer{
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px 15px 50px 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.information, .company-link, .support-link, .about-link{
+  margin: 0 15px 20px 15px;
+}
+
+footer a{
+  text-decoration: none;
+  display: block;
+  color: gray;
+  margin: 20px 0;
+  font-size: 14px;
+  transition: 0.4s;
+}
+footer a:hover{
+  color: var(--main-color);
+}
+.information{
+  width: 30%;
+}
+footer i{
+  padding: 0.4em;
+  transition: 0.4s;
+  cursor: pointer;
+  border-radius: 20px;
+}
+footer i:hover{
+  background-color: #efefef;
+}
+
+footer .fa-facebook{
+  color: #1A5AFF;
+}
+footer .fa-linkedin{
+  color: #0A66C2;
+}
+footer .fa-twitter{
+  color: #00acee;
+}
+footer .fa-pinterest{
+  color: #c8232c;
+}
+
+/* styles for the tradmark section */
+.tradmark-section{
+  background-color: #efefef;
+}
+.tradmark{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 20px 30px;
+}
+.tradmark small{
+  font-size: 8px;
+}
+.tradmark .terms-link{
+  color: var(--main-color);
+  font-size: 12px;
+}
+.tradmark small a{
+  color: var(--main-color);
+}
+/* Responsive styles for screens up to 380px wide */
+@media (max-width: 380px) {
+  footer{
+    flex-direction: column-reverse;
+  }
+  .information, .company-link, .support-link, .about-link{
+    width: 100% !important;
+  }
+  .terms-link{
+    display: none;
+  }
+}
+/* Responsive styles for screens up to 481px wide */
+@media (max-width: 481px) {
+   
+    .login-btn, .signup-btn{
+        width: 50%;
+    }
+    /* header left content */
+    .left-content{
+        margin-bottom: 50px;
+    }
+   /* header email-input-container */
+    .email-input-container{
+        width: 100%;
+    }
+
+    /* benefit section */
+    .right-side-img{
+      width: 80% !important;
+    }
+
+     /* styles for the services option */
+.services-option{
+  width: 100% !important;
+ 
+}
+.more-option{
+  display: none;
+}
+
+/* footer section */
+footer{
+  padding: 50px 15px;
+}
+
+.banner-right-side h1{
+  width: 100%;
+}
+
+}
+
+
+
+/* Responsive styles for screens up to 680px wide */
+@media (max-width: 680px) {
+  /* styles for the benefit section */
+.benefit-section{
+  flex-direction: column;
+}
+.left-side-content{
+  width: 100%;
+  margin-bottom: 70px;
+}
+.right-side-img{
+  width: 60%;
+}
+/* services section */
+.services-header{
+  width: 100% !important;
+}
+/* reveal brand section */
+.reveal-brand-section{
+  flex-direction: column-reverse;
+}
+.revel-left-box{
+  width: 100%;
+}
+.reveal-right-container{
+  width: 100%;
+  margin-bottom: 30px;
+}
+/* styles for the footer */
+.information, .company-link, .support-link, .about-link{
+  width: 40%;
+  margin-bottom: 30px;
+}
+.banner-left-side{
+  display: none;
+}
+.banner-right-side{
+  width: 100% !important;
+}
+}
+
+/* Responsive styles for screens up to 768pxwide */
+@media (max-width: 768px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0px;
+    }
+    #responsiveNav{
+      width: 100%;
+      flex-direction: column;
+    }
+    .navlinks{
+        width: 100%;
+        margin-left: 0 !important;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: #efefef;
+    }
+    .navlinks a{
+        display: block;
+    
+    }
+    .loginSignup{
+      width: 100%;
+    }
+    /* Select the first three a tags and add a bottom border */
+    .navlinks a:nth-child(-n + 3) {
+    border-bottom: 1px solid #cccccc6b;
+  }
+
+  /* header section */
+  header{
+    flex-direction: column;
+  }
+
+  .left-content{
+    width: 100%;
+  }
+  .background-shape{
+    bottom: -20%;
+  }
+
+  /* navigation logo and icon */
+  .logoNavigationIcon{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+ .navigation-icon {
+        background-color: var(--main-color);
+        color: white;
+        display: block;
+        padding: 0.2em 0.5em;
+        border-radius: 5px;
+    }
+.navigation-icon .fa-x{
+    display: none;
+}
+
+/* our client section */
+.ourclient{
+    width: 100%;
+   
+}
+/* benefit left side content */
+.left-side-content .option{
+  width: 80%;
+  margin-left: 0px;
+}
+
+/* bolg section */
+.blog-section{
+  flex-direction: column;
+}
+.blog{
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+  }
+/* Responsive styles for screens up to 1024px wide */
+@media (max-width: 1024px) {
+    .navlinks{
+        margin-left: 5%;
+    }
+
+    /* benefit section */
+    .img-under-shape, .img{
+      width: 80%;
+    }
+    /* styles for the services option */
+.services-option{
+  width: 46%;
+}
+
+
+.banner-right-side{
+  width: 50%;
+  padding: 30px 0;
+}
+  }
